@@ -1,0 +1,48 @@
+/* CREATE TABLE Movie (
+  	ID integer primary key autoincrement,
+  	Title varchar(300),
+  	MediaTypeId float(5),
+  	FOREIGN KEY (MediaTypeId) REFERENCES MediaType(MediaTypeId)); */
+ 
+/* select * from Movie;  */
+/* Insert into Movie( Title,MediaTypeId)
+Values("James Bond", 3);  */
+
+/* select * from mediatype; */
+/* select * from Movie;  */
+/* select * from genre; */
+
+/* alter table Movie ADD COLUMN GenreId integer references Genre(GenreId); */
+
+/* select * from Movie; */
+
+/* update Movie SET GenreId=22 where id=1; */
+
+
+
+/* select Artist.Name, Album.title, Album.AlbumId
+from Album
+join Artist On Artist.ArtistId = Album.ArtistId; */
+
+/* select * from Track where GenreId IN 
+(SELECT GenreId from Genre WHERE Name = 'Jazz' OR Name = 'Blues');  */
+
+/* UPDATE Employee set Phone = null where EmployeeId = 1; */
+
+/* Select * from Employee where EmployeeId = 1; */
+
+/* Select * from Customer where Company IS null; */
+
+/* Select Artist.ArtistId,Artist.Name,count(*)
+from Artist
+join Album On Artist.ArtistId = Album.ArtistId
+Group by Artist.ArtistId; */
+
+/* select distinct Country from Customer; */
+
+/* select * from Customer where fax IS null; */
+
+DELETE FROM Customer WHERE Fax IS null;
+ 
+/* select * from Customer; */
+ 
